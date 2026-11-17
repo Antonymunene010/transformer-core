@@ -1,0 +1,17 @@
+[project]
+name = "transformer-core"
+version = "0.1.0"
+description = "Modern Decoder-only Transformer implementation from scratch in pure PyTorch with RoPE, RMSNorm, SwiGLU, and KV-Cache generation."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
